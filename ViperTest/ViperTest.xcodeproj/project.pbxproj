@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5606AEA1DC3C782008F2F3A /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE61DC3C782008F2F3A /* DetailInteractor.swift */; };
+		E5606AEB1DC3C782008F2F3A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE71DC3C782008F2F3A /* DetailPresenter.swift */; };
+		E5606AEC1DC3C782008F2F3A /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE81DC3C782008F2F3A /* DetailRouter.swift */; };
+		E5606AED1DC3C782008F2F3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE91DC3C782008F2F3A /* DetailViewController.swift */; };
 		E5709EB31DC21CE8002A723E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5709EB21DC21CE8002A723E /* AppDelegate.swift */; };
 		E5709EB61DC21CE8002A723E /* ViperTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5709EB41DC21CE8002A723E /* ViperTest.xcdatamodeld */; };
 		E5709EBD1DC21CE8002A723E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5709EBB1DC21CE8002A723E /* Main.storyboard */; };
@@ -14,7 +18,6 @@
 		E5709EC21DC21CE8002A723E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5709EC01DC21CE8002A723E /* LaunchScreen.storyboard */; };
 		E5709ECD1DC21CE8002A723E /* ViperTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5709ECC1DC21CE8002A723E /* ViperTestTests.swift */; };
 		E5709ED81DC21CE8002A723E /* ViperTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5709ED71DC21CE8002A723E /* ViperTestUITests.swift */; };
-		E59625E81DC399EE00B21FAC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59625E61DC399EE00B21FAC /* DetailViewController.swift */; };
 		E59625E91DC399EE00B21FAC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59625E71DC399EE00B21FAC /* MasterViewController.swift */; };
 		E59625ED1DC39AA400B21FAC /* ViperConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59625EC1DC39AA400B21FAC /* ViperConfigurator.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5606AE61DC3C782008F2F3A /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		E5606AE71DC3C782008F2F3A /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		E5606AE81DC3C782008F2F3A /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		E5606AE91DC3C782008F2F3A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E5709EAF1DC21CE8002A723E /* ViperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5709EB21DC21CE8002A723E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5709EB51DC21CE8002A723E /* ViperTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperTest.xcdatamodel; sourceTree = "<group>"; };
@@ -50,7 +57,6 @@
 		E5709ED31DC21CE8002A723E /* ViperTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5709ED71DC21CE8002A723E /* ViperTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperTestUITests.swift; sourceTree = "<group>"; };
 		E5709ED91DC21CE8002A723E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E59625E61DC399EE00B21FAC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E59625E71DC399EE00B21FAC /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		E59625EC1DC39AA400B21FAC /* ViperConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5606AE51DC3C741008F2F3A /* DetailFlow */ = {
+			isa = PBXGroup;
+			children = (
+				E5606AE61DC3C782008F2F3A /* DetailInteractor.swift */,
+				E5606AE71DC3C782008F2F3A /* DetailPresenter.swift */,
+				E5606AE81DC3C782008F2F3A /* DetailRouter.swift */,
+				E5606AE91DC3C782008F2F3A /* DetailViewController.swift */,
+			);
+			path = DetailFlow;
+			sourceTree = "<group>";
+		};
 		E5709EA61DC21CE7002A723E = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +153,7 @@
 		E59625E51DC3998D00B21FAC /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				E59625E61DC399EE00B21FAC /* DetailViewController.swift */,
+				E5606AE51DC3C741008F2F3A /* DetailFlow */,
 				E59625E71DC399EE00B21FAC /* MasterViewController.swift */,
 			);
 			path = Flows;
@@ -288,10 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59625E91DC399EE00B21FAC /* MasterViewController.swift in Sources */,
+				E5606AEA1DC3C782008F2F3A /* DetailInteractor.swift in Sources */,
 				E59625ED1DC39AA400B21FAC /* ViperConfigurator.swift in Sources */,
-				E59625E81DC399EE00B21FAC /* DetailViewController.swift in Sources */,
 				E5709EB61DC21CE8002A723E /* ViperTest.xcdatamodeld in Sources */,
 				E5709EB31DC21CE8002A723E /* AppDelegate.swift in Sources */,
+				E5606AEC1DC3C782008F2F3A /* DetailRouter.swift in Sources */,
+				E5606AEB1DC3C782008F2F3A /* DetailPresenter.swift in Sources */,
+				E5606AED1DC3C782008F2F3A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
