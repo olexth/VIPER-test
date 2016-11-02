@@ -14,7 +14,7 @@ protocol DetailViewControllerInput: DetailPresenterOutput {
 protocol DetailViewControllerOutput {
 }
 
-class DetailViewController: UIViewController, DetailViewControllerInput {
+final class DetailViewController: UIViewController, DetailViewControllerInput {
     var output: DetailViewControllerOutput!
     var router: DetailRouter!
 
