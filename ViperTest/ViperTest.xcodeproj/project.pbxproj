@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5606AEA1DC3C782008F2F3A /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE61DC3C782008F2F3A /* DetailInteractor.swift */; };
-		E5606AEB1DC3C782008F2F3A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE71DC3C782008F2F3A /* DetailPresenter.swift */; };
-		E5606AEC1DC3C782008F2F3A /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE81DC3C782008F2F3A /* DetailRouter.swift */; };
-		E5606AED1DC3C782008F2F3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5606AE91DC3C782008F2F3A /* DetailViewController.swift */; };
+		E541ADD21DC69CAD00E6C2DA /* FetchedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541ADD11DC69CAD00E6C2DA /* FetchedTableViewDataSource.swift */; };
+		E541ADD51DC6AC4F00E6C2DA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541ADD41DC6AC4F00E6C2DA /* DataManager.swift */; };
+		E54440121DC52124004BB3E1 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544400D1DC52124004BB3E1 /* DetailInteractor.swift */; };
+		E54440131DC52124004BB3E1 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544400E1DC52124004BB3E1 /* DetailPresenter.swift */; };
+		E54440141DC52124004BB3E1 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544400F1DC52124004BB3E1 /* DetailRouter.swift */; };
+		E54440151DC52124004BB3E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54440101DC52124004BB3E1 /* DetailViewController.swift */; };
+		E54440261DC521A0004BB3E1 /* MasterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54440221DC521A0004BB3E1 /* MasterInteractor.swift */; };
+		E54440271DC521A0004BB3E1 /* MasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54440231DC521A0004BB3E1 /* MasterPresenter.swift */; };
+		E54440281DC521A0004BB3E1 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54440241DC521A0004BB3E1 /* MasterRouter.swift */; };
+		E54440291DC521A0004BB3E1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54440251DC521A0004BB3E1 /* MasterViewController.swift */; };
 		E5709EB31DC21CE8002A723E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5709EB21DC21CE8002A723E /* AppDelegate.swift */; };
 		E5709EB61DC21CE8002A723E /* ViperTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5709EB41DC21CE8002A723E /* ViperTest.xcdatamodeld */; };
 		E5709EBD1DC21CE8002A723E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5709EBB1DC21CE8002A723E /* Main.storyboard */; };
@@ -18,7 +24,6 @@
 		E5709EC21DC21CE8002A723E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5709EC01DC21CE8002A723E /* LaunchScreen.storyboard */; };
 		E5709ECD1DC21CE8002A723E /* ViperTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5709ECC1DC21CE8002A723E /* ViperTestTests.swift */; };
 		E5709ED81DC21CE8002A723E /* ViperTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5709ED71DC21CE8002A723E /* ViperTestUITests.swift */; };
-		E59625E91DC399EE00B21FAC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59625E71DC399EE00B21FAC /* MasterViewController.swift */; };
 		E59625ED1DC39AA400B21FAC /* ViperConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59625EC1DC39AA400B21FAC /* ViperConfigurator.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E5606AE61DC3C782008F2F3A /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
-		E5606AE71DC3C782008F2F3A /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
-		E5606AE81DC3C782008F2F3A /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
-		E5606AE91DC3C782008F2F3A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E541ADD11DC69CAD00E6C2DA /* FetchedTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedTableViewDataSource.swift; sourceTree = "<group>"; };
+		E541ADD41DC6AC4F00E6C2DA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E544400D1DC52124004BB3E1 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		E544400E1DC52124004BB3E1 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		E544400F1DC52124004BB3E1 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		E54440101DC52124004BB3E1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E54440221DC521A0004BB3E1 /* MasterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterInteractor.swift; sourceTree = "<group>"; };
+		E54440231DC521A0004BB3E1 /* MasterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterPresenter.swift; sourceTree = "<group>"; };
+		E54440241DC521A0004BB3E1 /* MasterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
+		E54440251DC521A0004BB3E1 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		E5709EAF1DC21CE8002A723E /* ViperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5709EB21DC21CE8002A723E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5709EB51DC21CE8002A723E /* ViperTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperTest.xcdatamodel; sourceTree = "<group>"; };
@@ -57,7 +68,6 @@
 		E5709ED31DC21CE8002A723E /* ViperTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5709ED71DC21CE8002A723E /* ViperTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperTestUITests.swift; sourceTree = "<group>"; };
 		E5709ED91DC21CE8002A723E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E59625E71DC399EE00B21FAC /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		E59625EC1DC39AA400B21FAC /* ViperConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,15 +96,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E5606AE51DC3C741008F2F3A /* DetailFlow */ = {
+		E541ADD01DC69CAD00E6C2DA /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				E5606AE61DC3C782008F2F3A /* DetailInteractor.swift */,
-				E5606AE71DC3C782008F2F3A /* DetailPresenter.swift */,
-				E5606AE81DC3C782008F2F3A /* DetailRouter.swift */,
-				E5606AE91DC3C782008F2F3A /* DetailViewController.swift */,
+				E541ADD11DC69CAD00E6C2DA /* FetchedTableViewDataSource.swift */,
 			);
-			path = DetailFlow;
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		E541ADD31DC6AC3B00E6C2DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E541ADD41DC6AC4F00E6C2DA /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E544400C1DC52124004BB3E1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E544400D1DC52124004BB3E1 /* DetailInteractor.swift */,
+				E544400E1DC52124004BB3E1 /* DetailPresenter.swift */,
+				E544400F1DC52124004BB3E1 /* DetailRouter.swift */,
+				E54440101DC52124004BB3E1 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E54440111DC52124004BB3E1 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				E54440221DC521A0004BB3E1 /* MasterInteractor.swift */,
+				E54440231DC521A0004BB3E1 /* MasterPresenter.swift */,
+				E54440241DC521A0004BB3E1 /* MasterRouter.swift */,
+				E54440251DC521A0004BB3E1 /* MasterViewController.swift */,
+				E541ADD01DC69CAD00E6C2DA /* DataSource */,
+			);
+			path = Master;
 			sourceTree = "<group>";
 		};
 		E5709EA61DC21CE7002A723E = {
@@ -121,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				E5709EB21DC21CE8002A723E /* AppDelegate.swift */,
+				E541ADD31DC6AC3B00E6C2DA /* Data */,
 				E59625E51DC3998D00B21FAC /* Flows */,
 				E5709EBB1DC21CE8002A723E /* Main.storyboard */,
 				E5709EBE1DC21CE8002A723E /* Assets.xcassets */,
@@ -153,8 +192,8 @@
 		E59625E51DC3998D00B21FAC /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				E5606AE51DC3C741008F2F3A /* DetailFlow */,
-				E59625E71DC399EE00B21FAC /* MasterViewController.swift */,
+				E544400C1DC52124004BB3E1 /* Detail */,
+				E54440111DC52124004BB3E1 /* Master */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -304,14 +343,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59625E91DC399EE00B21FAC /* MasterViewController.swift in Sources */,
-				E5606AEA1DC3C782008F2F3A /* DetailInteractor.swift in Sources */,
+				E54440141DC52124004BB3E1 /* DetailRouter.swift in Sources */,
+				E54440151DC52124004BB3E1 /* DetailViewController.swift in Sources */,
+				E541ADD21DC69CAD00E6C2DA /* FetchedTableViewDataSource.swift in Sources */,
 				E59625ED1DC39AA400B21FAC /* ViperConfigurator.swift in Sources */,
+				E54440131DC52124004BB3E1 /* DetailPresenter.swift in Sources */,
+				E54440281DC521A0004BB3E1 /* MasterRouter.swift in Sources */,
+				E54440121DC52124004BB3E1 /* DetailInteractor.swift in Sources */,
+				E54440271DC521A0004BB3E1 /* MasterPresenter.swift in Sources */,
+				E54440291DC521A0004BB3E1 /* MasterViewController.swift in Sources */,
+				E54440261DC521A0004BB3E1 /* MasterInteractor.swift in Sources */,
 				E5709EB61DC21CE8002A723E /* ViperTest.xcdatamodeld in Sources */,
+				E541ADD51DC6AC4F00E6C2DA /* DataManager.swift in Sources */,
 				E5709EB31DC21CE8002A723E /* AppDelegate.swift in Sources */,
-				E5606AEC1DC3C782008F2F3A /* DetailRouter.swift in Sources */,
-				E5606AEB1DC3C782008F2F3A /* DetailPresenter.swift in Sources */,
-				E5606AED1DC3C782008F2F3A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
