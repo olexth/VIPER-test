@@ -18,10 +18,12 @@ protocol MasterViewControllerOutput {
     func eventAt(indexPath: IndexPath) -> Event
 }
 
-final class MasterViewController: UITableViewController, MasterViewControllerInput {
+final class MasterViewController: UIViewController, MasterViewControllerInput {
     var output: MasterViewControllerOutput!
     var router: MasterRouter!
     var detailViewController: DetailViewController? = nil
+
+    @IBOutlet weak var tableView: UITableView!
 
     // MARK: Object lifecycle
 
@@ -50,7 +52,8 @@ final class MasterViewController: UITableViewController, MasterViewControllerInp
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
+        // TODO:
+//        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
 
@@ -76,11 +79,11 @@ final class MasterViewController: UITableViewController, MasterViewControllerInp
 }
 
 extension MasterViewController {
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
 
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             output.deleteObjectAt(indexPath: indexPath)
         }

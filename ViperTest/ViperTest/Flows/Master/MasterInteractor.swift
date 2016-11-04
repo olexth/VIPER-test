@@ -24,7 +24,8 @@ final class MasterInteractor: MasterInteractorInput {
     }
 
     func setupDataSourceWith(tableView: UITableView) {
-        self.dataSource.tableView = tableView
+        dataSource.tableView = tableView
+        dataSource.tableView.dataSource = dataSource
     }
 
     // MARK: Business logic
