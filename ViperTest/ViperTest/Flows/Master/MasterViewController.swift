@@ -41,20 +41,10 @@ final class MasterViewController: UIViewController, MasterViewControllerInput {
         output.setupDataSourceWith(tableView: tableView)
 
         super.viewDidLoad()
-        self.navigationItem.leftBarButtonItem = self.editButtonItem
-
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        self.navigationItem.rightBarButtonItem = addButton
-        if let split = self.splitViewController {
+        if let split = splitViewController {
             let controllers = split.viewControllers
-            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+            detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
         }
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        // TODO:
-//        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
-        super.viewWillAppear(animated)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -63,7 +53,7 @@ final class MasterViewController: UIViewController, MasterViewControllerInput {
                 let selectedEvent = output.eventAt(indexPath: indexPath)
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.event = selectedEvent
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
@@ -71,15 +61,19 @@ final class MasterViewController: UIViewController, MasterViewControllerInput {
 
     // MARK: Event handling
 
-    func insertNewObject(_ sender: Any) {
+    @IBAction func didPress(addButton: UIBarButtonItem) {
         output.insertNewObject()
     }
 
-    // MARK: Display logic=
+    @IBAction func didPress(editButton: UIBarButtonItem) {
+
+    }
+
+    // MARK: Display logic
 }
 
-extension MasterViewController {
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+extension MasterViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, canFocusRowAt indexPath: IndexPath) -> Bool {
         return true
     }
 
@@ -87,6 +81,10 @@ extension MasterViewController {
         if editingStyle == .delete {
             output.deleteObjectAt(indexPath: indexPath)
         }
+    }
+
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Delete"
     }
 }
 
