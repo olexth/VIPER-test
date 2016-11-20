@@ -96,11 +96,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qmI-rx-Zzc" id="tZl-So-PCX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p2i-tE-KyH">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -123,7 +123,18 @@
                             <constraint firstItem="t3w-O2-XcQ" firstAttribute="leading" secondItem="Gec-em-IMP" secondAttribute="leading" id="s1A-QV-0HO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i4r-dM-liP"/>
+                    <navigationItem key="navigationItem" id="i4r-dM-liP">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="ibr-MN-LT2">
+                            <connections>
+                                <action selector="didPressWithEditButton:" destination="aGy-pD-3hE" id="D8O-N9-eps"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gGa-2Q-max">
+                            <connections>
+                                <action selector="didPressWithAddButton:" destination="aGy-pD-3hE" id="veX-8R-VsT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="t3w-O2-XcQ" id="L5m-hB-UX6"/>
                         <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="Kwo-DC-Epf"/>
