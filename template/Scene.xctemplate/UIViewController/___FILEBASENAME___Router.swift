@@ -8,20 +8,16 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___RouterInput {
-    
-}
+protocol ___FILEBASENAMEASIDENTIFIER___RouterInput {}
 
 final class ___FILEBASENAMEASIDENTIFIER___Router {
     weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController!
-    
+
     // MARK: Navigation
-    
+
     // MARK: Communication
-    
-    func passDataToNextScene(segue: UIStoryboardSegue) {
-        
-    }
+
+    func passDataToNextScene(segue: UIStoryboardSegue) {}
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: ViperRouter {
