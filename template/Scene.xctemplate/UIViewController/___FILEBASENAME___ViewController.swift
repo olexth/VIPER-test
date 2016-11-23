@@ -14,7 +14,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {}
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInput {
     var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput!
-    var router: ___FILEBASENAMEASIDENTIFIER___Router!
+    var router: ___FILEBASENAMEASIDENTIFIER___RouterInput!
 
     // MARK: Object lifecycle
 
@@ -38,11 +38,11 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ViperViewController {
-    func setOutput(output: ViperInteractor){
+    func setOutput(output: ViperInteractor) {
         self.output = output as! ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput
     }
 
     func setRouter(router: ViperRouter) {
-        self.router = router as! ___FILEBASENAMEASIDENTIFIER___Router
+        self.router = router as! ___FILEBASENAMEASIDENTIFIER___RouterInput
     }
 }

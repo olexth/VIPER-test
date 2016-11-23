@@ -10,7 +10,7 @@ import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___RouterInput {}
 
-final class ___FILEBASENAMEASIDENTIFIER___Router {
+final class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___RouterInput {
     weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController!
 
     // MARK: Navigation
