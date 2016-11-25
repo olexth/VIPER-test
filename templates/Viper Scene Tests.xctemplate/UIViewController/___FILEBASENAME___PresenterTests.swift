@@ -6,21 +6,30 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import UIKit
+@testable import ___FILEBASENAMEASIDENTIFIER___
+import XCTest
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterInput: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {}
+class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
+    fileprivate var sut: ___FILEBASENAMEASIDENTIFIER___!
+    fileprivate var dummyOutput: DummyOutput!
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {}
+    override func setUp() {
+        super.setUp()
+        sut = ___FILEBASENAMEASIDENTIFIER___()
+        dummyOutput = DummyOutput()
+        sut.output = dummyOutput
+    }
 
-final class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput {
-    weak var output: ___FILEBASENAMEASIDENTIFIER___PresenterOutput!
-
-    // MARK: Presentation logic
+    override func tearDown() {
+        dummyOutput = nil
+        sut = nil
+        super.tearDown()
+    }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ViperPresenter {
-    convenience init(withOutput: ViperViewController) {
-        self.init()
-        self.output = withOutput as! ___FILEBASENAMEASIDENTIFIER___PresenterOutput
+fileprivate class DummyOutput: ___FILEBASENAMEASIDENTIFIER___Output {
+    var didInvokeFunction = false
+    func function() {
+        didInvokeFunction = true
     }
 }
