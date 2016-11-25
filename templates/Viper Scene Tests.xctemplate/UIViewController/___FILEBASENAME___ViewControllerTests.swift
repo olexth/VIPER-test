@@ -6,43 +6,37 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import UIKit
+@testable import ___PROJECTNAME___
+import XCTest
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerInput: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {}
+class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
+    fileprivate var sut: SkillsViewController!
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {}
-
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInput {
-    var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput!
-    var router: ___FILEBASENAMEASIDENTIFIER___RouterInput!
-
-    // MARK: Object lifecycle
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        ViperConfigurator.configure(viewController: self,
-            interactorType: ___FILEBASENAMEASIDENTIFIER___Interactor.self,
-            presenterType: ___FILEBASENAMEASIDENTIFIER___Presenter.self,
-            routerType: ___FILEBASENAMEASIDENTIFIER___Router.self)
+    override func setUp() {
+        super.setUp()
+        sut = StoryboardScene.Flow.viewController()
+        let _  = sut.view
     }
 
-    // MARK: View lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
     }
 
-    // MARK: Event handling
-
-    // MARK: Display logic
+    func testViewControllerSetup() {
+        XCTAssertNotNil(sut.router, "view controller should have router instantiated")
+        XCTAssertNotNil(sut.output, "view controller should have output instantiated")
+    }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: ViperViewController {
-    func setOutput(output: ViperInteractor) {
-        self.output = output as! ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput
+fileprivate class DummyRouter: ___FILEBASENAMEASIDENTIFIER___RouterInput {
+    var didInvokePassDataToNextScene = false
+    func passDataToNextScene(segue: UIStoryboardSegue) {
+        didInvokePassDataToNextScene = true
     }
 
-    func setRouter(router: ViperRouter) {
-        self.router = router as! ___FILEBASENAMEASIDENTIFIER___RouterInput
+    var didInvokePassDataToNextSceneWithSender = false
+    private func passDataToNextScene(segue: UIStoryboardSegue, sender: AnyObject?) {
+        didInvokePassDataToNextSceneWithSender = true
     }
 }

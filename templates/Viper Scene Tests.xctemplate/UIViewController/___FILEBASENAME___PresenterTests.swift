@@ -6,7 +6,7 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-@testable import ___FILEBASENAMEASIDENTIFIER___
+@testable import ___PROJECTNAME___
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {

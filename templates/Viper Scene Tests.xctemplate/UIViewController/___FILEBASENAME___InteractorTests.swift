@@ -6,10 +6,10 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-@testable import Dipio
+@testable import ___PROJECTNAME___
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___Tests: XCTestCase {
+class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
     fileprivate var sut: ___FILEBASENAMEASIDENTIFIER___!
     fileprivate var dummyOutput: DummyOutput!
 

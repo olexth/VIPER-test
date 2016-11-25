@@ -6,23 +6,28 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import UIKit
+@testable import ___PROJECTNAME___
+import XCTest
 
-protocol ___FILEBASENAMEASIDENTIFIER___RouterInput {}
+class ___FILEBASENAMEASIDENTIFIER___RouterTests: XCTestCase {
+    private var sut: ConfirmLegalRouter!
 
-final class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___RouterInput {
-    weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController!
+    override func setUp() {
+        super.setUp()
+        sut = ___FILEBASENAMEASIDENTIFIER___Router()
+    }
 
-    // MARK: Navigation
-
-    // MARK: Communication
-
-    func passDataToNextScene(segue: UIStoryboardSegue) {}
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
+    }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Router: ViperRouter {
-    convenience init(withViewController controller: ViperViewController) {
-        self.init()
-        self.viewController = controller as! ___FILEBASENAMEASIDENTIFIER___ViewController
+fileprivate class DummyViewController: ___FILEBASENAMEASIDENTIFIER___ViewController {
+    var didInvokePerformSegueWithIdentifier = false
+    var segueIdentifier: String?
+    private override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
+        didInvokePerformSegueWithIdentifier = true
+        segueIdentifier = identifier
     }
 }
