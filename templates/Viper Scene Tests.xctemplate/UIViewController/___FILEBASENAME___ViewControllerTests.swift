@@ -10,7 +10,7 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
-    fileprivate var sut: SkillsViewController!
+    fileprivate var sut: ___FILEBASENAMEASIDENTIFIER___ViewController!
 
     override func setUp() {
         super.setUp()

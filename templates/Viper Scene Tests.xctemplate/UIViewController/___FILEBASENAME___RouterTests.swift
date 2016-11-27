@@ -10,7 +10,7 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___RouterTests: XCTestCase {
-    private var sut: ConfirmLegalRouter!
+    private var sut: ___FILEBASENAMEASIDENTIFIER___Router!
 
     override func setUp() {
         super.setUp()
