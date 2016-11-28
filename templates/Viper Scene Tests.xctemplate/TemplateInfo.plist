@@ -16,7 +16,7 @@
 			<key>Identifier</key>
 			<string>sceneName</string>
 			<key>Name</key>
-			<string>New Scene Name:</string>
+			<string>New Test Scene Name:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -40,7 +40,7 @@
 			<key>Identifier</key>
 			<string>viewControllerName</string>
 			<key>Name</key>
-			<string>View Controller Name:</string>
+			<string>Test View Controller Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -54,7 +54,7 @@
 			<key>Identifier</key>
 			<string>interactorName</string>
 			<key>Name</key>
-			<string>Interactor Name:</string>
+			<string>Test Interactor Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -68,7 +68,7 @@
 			<key>Identifier</key>
 			<string>presenterName</string>
 			<key>Name</key>
-			<string>Presenter Name:</string>
+			<string>Test Presenter Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -82,35 +82,7 @@
 			<key>Identifier</key>
 			<string>routerName</string>
 			<key>Name</key>
-			<string>Router Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Worker</string>
-			<key>Description</key>
-			<string>The worker name</string>
-			<key>Identifier</key>
-			<string>workerName</string>
-			<key>Name</key>
-			<string>Worker Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Models</string>
-			<key>Description</key>
-			<string>The model file name</string>
-			<key>Identifier</key>
-			<string>modelFileName</string>
-			<key>Name</key>
-			<string>Model File Name:</string>
+			<string>Test Router Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -136,8 +108,6 @@
 			<key>Values</key>
 			<array>
 				<string>UIViewController</string>
-				<string>UITableViewController</string>
-				<string>UICollectionViewController</string>
 			</array>
 		</dict>
 	</array>
