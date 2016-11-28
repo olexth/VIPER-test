@@ -10,12 +10,12 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
-    fileprivate var sut: ___FILEBASENAMEASIDENTIFIER___!
+    fileprivate var sut: ___FILEBASENAMEASIDENTIFIER___Interactor!
     fileprivate var dummyOutput: DummyOutput!
 
     override func setUp() {
         super.setUp()
-        sut = ___FILEBASENAMEASIDENTIFIER___()
+        sut = ___FILEBASENAMEASIDENTIFIER___Interactor()
         dummyOutput = DummyOutput()
         sut.output = dummyOutput
     }
@@ -27,7 +27,7 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
     }
 }
 
-private class DummyOutput: ___FILEBASENAMEASIDENTIFIER___Output {
+private class DummyOutput: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
     var didInvokeFunction = false
     func function() {
         didInvokeFunction = true
