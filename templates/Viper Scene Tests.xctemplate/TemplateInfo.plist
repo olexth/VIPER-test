@@ -34,7 +34,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewController</string>
+			<string>___VARIABLE_sceneName:identifier___ViewControllerTests</string>
 			<key>Description</key>
 			<string>The view controller name</string>
 			<key>Identifier</key>
@@ -48,7 +48,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Interactor</string>
+			<string>___VARIABLE_sceneName:identifier___InteractorTests</string>
 			<key>Description</key>
 			<string>The interactor name</string>
 			<key>Identifier</key>
@@ -62,7 +62,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Presenter</string>
+			<string>___VARIABLE_sceneName:identifier___PresenterTests</string>
 			<key>Description</key>
 			<string>The presenter name</string>
 			<key>Identifier</key>
@@ -76,7 +76,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Router</string>
+			<string>___VARIABLE_sceneName:identifier___RouterTests</string>
 			<key>Description</key>
 			<string>The router name</string>
 			<key>Identifier</key>
