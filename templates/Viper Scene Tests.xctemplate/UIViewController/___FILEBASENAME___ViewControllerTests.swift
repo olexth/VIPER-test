@@ -36,7 +36,7 @@ fileprivate class DummyRouter: ___FILEBASENAMEASIDENTIFIER___RouterInput {
     }
 
     var didInvokePassDataToNextSceneWithSender = false
-    private func passDataToNextScene(segue: UIStoryboardSegue, sender: AnyObject?) {
+    fileprivate func passDataToNextScene(segue: UIStoryboardSegue, sender: AnyObject?) {
         didInvokePassDataToNextSceneWithSender = true
     }
 }
